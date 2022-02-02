@@ -21,16 +21,15 @@ function sendApi (obj) {
     $("#copy").html(obj.copyright)
 
      if (type === '"image"') {
-        $("#wrapper-video").css("display", "none")
-        $("#wrapper-img").css("display", "flex")
+        $("#video").css("display", "none")
+        $("#content").css("display", "block")
         $("#wrapper-img").attr("src", imag)
     } 
         else {
-        $(".csimg").css("diplay", "none")
-        $("#wrapper-video").css("display", "flex")
+        $("#content").css("display", "none")
+        $("#wrapper-video").attr("src", imag)
+        $("#video").css("display", "block")
         $("#wrapper-video").css("width", "600px")
         $("#wrapper-video").css("height", "520px")
-        $("#wrapper-video").attr("src", imag)
-    }
-
+    } 
 }
