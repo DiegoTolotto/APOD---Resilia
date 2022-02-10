@@ -1,6 +1,8 @@
 const queryKey = "api_key=cZcFKoeWmVwmafy662eRF2U1zhVEnPlcyZJwaZo5";
 var queryUrl = `https://api.nasa.gov/planetary/apod?${queryKey}`;
 
+console.log(queryUrl);
+
 $("#btn").on("click", requestApi)
 
 function requestApi () {
